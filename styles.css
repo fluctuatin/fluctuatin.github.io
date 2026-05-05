@@ -1,0 +1,140 @@
+/*Importing Atkinson Hyperlegible*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Importing Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Importing Doner*/
+@font-face {
+    font-family: 'Doner';
+    src: url(fonts/Doner-BlackDisplay.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Doner';
+    src: url(fonts/Doner-RegularDisplay.woff2);
+    font-weight: normal;
+}
+
+body {
+    background-color: #5dffff;
+    width: 100vw;
+    margin: 0;
+}
+
+/*I don't like the underline for links*/
+a {
+    text-decoration: none;
+}
+
+.logotype {
+    color: white;
+    font-family: "Doner";
+    text-transform: uppercase;
+    font-size: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+div.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3260CA;
+    margin: 10px;
+    padding: 8px 15px 8px;
+    border-radius: 25px 100px 100px 25px;
+}
+
+/*Subbar capsule*/
+div.subbar {
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 10px;
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 50px;
+}
+
+ul.subbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.subbar li {
+    float: left;
+}
+
+.subbar li a {
+    display: flexbox;
+    text-align: center;
+    padding: 16px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-transform: uppercase;
+    color:#3260CA;
+}
+/*Subbar capsule ends*/
+
+.burger {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin: 0 7px 0;
+    padding: 7px;
+    text-align: inherit;
+    border-radius: 0;
+    appearance: none;
+    color: #3260CA;
+    display: none;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3260CA;
+    margin: 10px;
+    border-radius: 10px;
+    height: 1000px;
+}
+
+div.foot {
+    background-color: #061842;
+    width: 100vw;
+    height: 75px;
+    position: relative;
+    bottom: 0;
+}
+
+/*Footer links*/
+.foot a:link {
+    color: white;
+}
+
+.foot a:visited {
+    color: white;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+/*Media Query for smaller window sizes*/
+@media (max-width: 1000px) {
+    /*
+    .logotype {color: red}
+    */
+    .burger {display: flex}
+    ul.subbar {display: none}
+}
+
+@media (max-width: 670px) {
+    .logotype {color: black}
+}
