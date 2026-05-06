@@ -95,11 +95,11 @@ ul.list {
     display: none;
 }
 
-.burger:hover {
+#burger:hover {
     color: black;
 }
 
-.burger:active {
+#burger:active {
     color: red;
 }
 
@@ -138,7 +138,7 @@ div.foot {
 @media (max-width: 1000px) {
     #burger {display: flex}
     .list {
-        display: none;
+        /* display: none; */
         position: absolute;
         right: 20px;
         top: 95px;
@@ -147,14 +147,15 @@ div.foot {
         max-height: none;
         max-width: 145px;
     }
-    .subbar li {
+    .list li {
         padding: 7px 0;
-        transition: all 0.2s ease 0s;
+        transition: all 0.1s ease 0s;
     }
-    .show {
+    .list .show {
         display: flexbox;
     }
 }
+
 
 @media (max-width: 670px) {
     .logotype {color: black}
