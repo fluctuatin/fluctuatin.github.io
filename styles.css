@@ -44,6 +44,7 @@ div.navbar {
     align-items: center;
     justify-content: space-between;
     background-color: #3260CA;
+    background-image: linear-gradient(to right, #0618AA, #3260CA);
     margin: 10px;
     padding: 8px 15px 8px;
     border-radius: 25px 100px 100px 25px;
@@ -64,6 +65,7 @@ ul.list {
     margin: 0;
     padding: 15px;
     overflow: hidden;
+    align-items: center;
 }
 
 .list li {
@@ -80,12 +82,21 @@ ul.list {
     color:#3260CA;
 }
 
-.list li a:hover {
-    opacity: 0.8;
+.list li:hover {
+    filter: brightness(0.8);
 }
 
 .list li a:active {
     color: black;
+    .external {
+        filter: brightness(0);
+    }
+}
+
+.external {
+    padding-left: 5px;
+    width: 13px;
+    position: relative; top: 1px;
 }
 
 /*Subbar capsule ends*/
@@ -105,27 +116,26 @@ ul.list {
 }
 
 #burger:hover {
-    color: black;
+    filter: brightness(0.8);
 }
 
 #burger:active {
-    color: red;
+    color: black;
 }
 
 #mainDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("images/hellboy learns rpgs more with a script brnach bubble.jpg");
+    background-image: url("images/Artboard1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-transform: uppercase;
-    filter: brightness(0.2);
     position: relative;
     margin: 10px;
     border-radius: 10px;
-    height: 1000px;
+    height: 800px;
 }
 
 #meInfo {
@@ -145,17 +155,25 @@ div.foot {
     bottom: 0;
 }
 
+.foot {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
 /*Footer links*/
 .foot a:link {
     color: white;
 }
 
 .foot a:visited {
-    color: white;
+    color: #c8c7ff;
 }
 
 .foot a:hover {
-    color: white;
+    color: #eaeaff;
 }
 
 /*Media Query for smaller window sizes*/
@@ -169,7 +187,8 @@ div.foot {
         background-color: white;
         border-radius: 18px;
         max-height: none;
-        max-width: 145px;
+        max-width: 155px;
+        min-width: 155px;
         z-index: 1000;
     }
     .list li {
