@@ -1,9 +1,13 @@
 //Attempting to get the burger menu to respond to a click and change the display mode on the navbar
-const nav = document.getElementById("subbar");
-const burger = document.getElementById("burger");
+window.onload = init;
 
-function burgerOpen() {
-    nav.style.display = "flexbox";
+function init(){
+    
+    const nav = document.getElementById("list");
+    const burg = document.getElementById("burger");
+    
+    burg.addEventListener('click', () => {
+        nav.style.display = "flexbox";
+        console.log("Working");
+    });
 }
-
-burger.addEventListener("click", burgerOpen);
