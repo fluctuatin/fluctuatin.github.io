@@ -59,18 +59,18 @@ div.subbar {
     min-width: 50px;
 }
 
-ul.subbar {
+ul.list {
     list-style-type: none;
     margin: 0;
     padding: 15px;
     overflow: hidden;
 }
 
-.subbar li {
+.list li {
     float: left;
 }
 
-.subbar li a {
+.list li a {
     display: flexbox;
     text-align: center;
     padding: 16px;
@@ -81,7 +81,7 @@ ul.subbar {
 }
 /*Subbar capsule ends*/
 
-.burger {
+#burger {
     font-size: 25px;
     font-weight: bold;
     background-color: transparent;
@@ -136,8 +136,9 @@ div.foot {
 
 /*Media Query for smaller window sizes*/
 @media (max-width: 1000px) {
-    .burger {display: flex}
-    ul.subbar {
+    #burger {display: flex}
+    .list {
+        display: none;
         position: absolute;
         right: 20px;
         top: 95px;
@@ -145,13 +146,12 @@ div.foot {
         border-radius: 18px;
         max-height: none;
         max-width: 145px;
-        display: none;
     }
     .subbar li {
         padding: 7px 0;
         transition: all 0.2s ease 0s;
     }
-    #subbar .show {
+    .show {
         display: flexbox;
     }
 }
