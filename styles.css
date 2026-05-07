@@ -84,7 +84,7 @@ ul.list {
     color:#3260CA;
 }
 
-.list li:hover {
+.list li a:hover {
     filter: brightness(0.8);
 }
 
@@ -137,6 +137,8 @@ ul.list {
     background-image: linear-gradient(to right, #0618AA, #3260CA);
     overflow: hidden;
     z-index: -1;
+    /*outline: #FFAB09 solid 5px;
+    outline-offset: -5px;*/
 }
 
 #meInfo {
@@ -145,6 +147,7 @@ ul.list {
     text-align: center;
     padding: 0;
     line-height: 0.9;
+    text-shadow: 0 5px 10px #2a249120;
 }
 
 #myName {
@@ -165,8 +168,8 @@ ul.list {
     top: 0;
     left: 0;
     z-index: -1;
-    mix-blend-mode: multiply;
-    filter: blur(0) brightness(0.4);
+    mix-blend-mode: overlay;
+    filter: blur(0) brightness(0.5);
 }
 
 /*Footer*/
