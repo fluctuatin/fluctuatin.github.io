@@ -9,22 +9,34 @@
         <style>
             #heroDiv {
                 display: flexbox !important;
+                overflow: scroll;
             }
             #Resume {
                 filter: brightness(0);
                 cursor: default;
             }
             div.jobCard {
-                background-color: black;
-                height: 150px;
+                backdrop-filter: blur(100px) brightness(.9);
+                height: fit-content;
                 border-radius: 20px;
+                outline-offset: -2px;
                 color: white;
                 position: relative;
                 margin: 33px;
             }
             h1.jobCard {
-                padding: 20px 25px;
+                padding: 27px 25px 10px;
+                margin: 0;
                 font-family: "Doner";
+                font-weight: Normal;
+                letter-spacing: 0.1rem;
+                line-height: 30px;
+            }
+            p.jobCard {
+                padding: 0 25px 25px;
+                margin: 0;
+                font-family: Montserrat;
+                line-height: 1.2;
             }
             div.jobTag {
                 background-color: white;
@@ -32,7 +44,7 @@
                 font-family: Montserrat;
                 font-weight: 600;
                 margin: 25px 25px;
-                padding: 5px 10px;
+                padding: 5px 15px;
                 border-radius: 100px;
                 color: black;
                 position: absolute;
@@ -45,7 +57,7 @@
     <body>
         <header>
             <div class="navbar">
-                <h1 class="logotype">fluctuating<span style="font-weight: normal">.art</span></h1>
+                <h1 class="logotype"><a href="index.html" style="color: white">fluctuating<span style="font-weight: normal">.art</span></a></h1>
                 <div class="subbar">
                     <!-- Hidden Burger -->
                     <button class="burger" id="burger" onclick="console.log('Noted')">&#9776;</button>
@@ -59,16 +71,42 @@
             </div>
         </header>
         <div id="heroDiv">
-            <!--Resume Card-->
+            <!--Resume Card Start-->
             <div class="jobCard">
-                <h1 class="jobCard">Setting Off! RPG</h1>
-                <div class="jobTag">2025-2026</div>
+                <h1 class="jobCard">Setting Off! RPG<i> - Character Illustrator</i></h1>
+                <div class="jobTag">June 2025- March 2026</div>
+                <p class="jobCard">
+                    Illustrated various monster/NPC designs for use in the core rulebook and expansions.
+                </p>
             </div>
-            <!--Resume Card-->
+            <!--Resume Card End-->
+            <!--Resume Card Start-->
             <div class="jobCard">
-                <h1 class="jobCard">Setting Off! RPG</h1>
-                <div class="jobTag">2025-2026</div>
+                <h1 class="jobCard">Nimble RPG<i> - Graphic Designer</i></h1>
+                <div class="jobTag">July - August 2024</div>
+                <p class="jobCard">
+                    Designed the spell card frames and the game's character sheet. <i>&lpar;uncredited in the first printing&rpar;</i>
+                </p>
             </div>
+            <!--Resume Card End-->
+            <!--Resume Card Start-->
+            <div class="jobCard">
+                <h1 class="jobCard">Elora: Tales of the Realm<i> - Card Artist</i></h1>
+                <div class="jobTag">November - December 2025</div>
+                <p class="jobCard">
+                    Illustrated several cards.
+                </p>
+            </div>
+            <!--Resume Card End-->
+            <!--Resume Card Start-->
+            <div class="jobCard">
+                <h1 class="jobCard">Legends of Akeroth<i> - Pixel Artist &amp; Graphic Designer</i></h1>
+                <div class="jobTag">December 2025 - Now</div>
+                <p class="jobCard">
+                    Graphic designer of the spell cards and illustrator of all 120 pieces of art that accompany each.
+                </p>
+            </div>
+            <!--Resume Card End-->
         </div>
         <footer>
             <div class="foot">
