@@ -3,9 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-        <title>Home | Fluctuating</title>
+        <title>About | Fluctuating</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
+        <style>
+            #About {
+                filter: brightness(0);
+                cursor: default;
+            }
+        </style>
     </head>
     <!-- Commentary -->
     <body>
@@ -17,19 +23,14 @@
                     <button class="burger" id="burger" onclick="console.log('Noted')">&#9776;</button>
                     <!-- Usually visible subbar -->
                     <ul class="list" id="list">
-                        <li><a id="About" href="about.html">About</a></li>
-                        <li><a id="Resume" href="resume.html">Résumé</a></li>
+                        <li><a id="About">About</a></li>
+                        <li><a id="Resume" href=resume.html>Résumé</a></li>
                         <li><a id="Portfolio" href="https://www.artstation.com/fluctuating" target="_blank">Portfolio<img class="external" src="images/extern.svg"/></a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <div id="heroDiv">
-            <div id="meInfo">
-                <div id="background"></div>
-                <h1 id="myName">John Tan E.Y.</h1>
-                <h2>Illustrator &amp; Graphic Designer</h2>  
-            </div>
         </div>
         <footer>
             <div class="foot">
