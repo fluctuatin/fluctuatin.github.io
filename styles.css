@@ -191,7 +191,30 @@ div.foot {
     color: white;
 }
 
+.footie {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.footie li {
+    float: left;
+}
+
+.footie li a {
+    display: flexbox;
+    text-align: center;
+    padding: 16px;
+}
+
+.footie li a {
+    width: 30px;
+}
+
 /*Footer links*/
+
 .foot a:link {
     color: white;
 }
