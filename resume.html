@@ -7,9 +7,37 @@
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
         <style>
+            #heroDiv {
+                display: flexbox !important;
+            }
             #Resume {
                 filter: brightness(0);
                 cursor: default;
+            }
+            div.jobCard {
+                background-color: black;
+                height: 150px;
+                border-radius: 20px;
+                color: white;
+                position: relative;
+                margin: 33px;
+            }
+            h1.jobCard {
+                padding: 20px 25px;
+                font-family: "Doner";
+            }
+            div.jobTag {
+                background-color: white;
+                width: fit-content;
+                font-family: Montserrat;
+                font-weight: 600;
+                margin: 25px 25px;
+                padding: 5px 10px;
+                border-radius: 100px;
+                color: black;
+                position: absolute;
+                top: 0;
+                right: 0;
             }
         </style>
     </head>
@@ -31,6 +59,16 @@
             </div>
         </header>
         <div id="heroDiv">
+            <!--Resume Card-->
+            <div class="jobCard">
+                <h1 class="jobCard">Setting Off! RPG</h1>
+                <div class="jobTag">2025-2026</div>
+            </div>
+            <!--Resume Card-->
+            <div class="jobCard">
+                <h1 class="jobCard">Setting Off! RPG</h1>
+                <div class="jobTag">2025-2026</div>
+            </div>
         </div>
         <footer>
             <div class="foot">
